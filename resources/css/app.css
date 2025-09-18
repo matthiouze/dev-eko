@@ -139,3 +139,11 @@
         @apply bg-background text-foreground;
     }
 }
+
+.bg-green {
+    background: rgb(86,174, 49);
+}
+
+h3 {
+    font-weight: bold;
+}

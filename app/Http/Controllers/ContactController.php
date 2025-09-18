@@ -27,8 +27,6 @@ class ContactController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['nullable', 'email', 'max:255'],
             'tel' => ['nullable', 'string', 'max:50'],
-            'reason' => ['nullable', Rule::in(array_column(Reason::cases(), 'value'))],
-            'nb_people' => ['nullable', 'integer', 'min:1'],
             'message' => ['nullable', 'string'],
         ]);
 

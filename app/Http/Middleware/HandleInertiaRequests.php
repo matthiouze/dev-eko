@@ -63,10 +63,6 @@ class HandleInertiaRequests extends Middleware
                 'location' => $request->url(),
             ],
             'sidebarOpen' => ! $request->hasCookie('sidebar_state') || $request->cookie('sidebar_state') === 'true',
-            'is_closed'       => config('app.is_closed'),
-            'is_pmr'          => config('app.is_pmr'),
-            'is_closed_until' => config('app.is_closed') ? config('app.is_closed_until') : null,
-            'open_events'     => config('app.open_events'),
         ];
     }
 }

@@ -24,9 +24,6 @@ class ContactSubmitted extends Mailable
     public function build(): self
     {
         $subject = 'Nouveau message de contact';
-        if (!empty($this->data['reason'])) {
-            $subject .= ' - ' . ucfirst((string) $this->data['reason']);
-        }
 
         return $this->subject($subject)
             ->view('emails.contact-submitted')
