@@ -20,6 +20,9 @@ class SitemapController extends Controller
         // Pages principales
         $xml .= $this->generateUrl($baseUrl, '1.0', 'weekly');
         $xml .= $this->generateUrl($baseUrl . '/menu', '0.8', 'weekly');
+        $xml .= $this->generateUrl($baseUrl . '/site-vitrine', '0.9', 'monthly');
+        $xml .= $this->generateUrl($baseUrl . '/site-ecommerce', '0.9', 'monthly');
+        $xml .= $this->generateUrl($baseUrl . '/application-web', '0.9', 'monthly');
         $xml .= $this->generateUrl($baseUrl . '/#contact', '0.6', 'monthly');
         
         // Éléments de menu

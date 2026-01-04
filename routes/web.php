@@ -16,6 +16,9 @@ Route::get('menu', [MenuController::class, 'index'])->name('menu');
 Route::get('evenements', [FrontController::class, 'events'])->name('events');
 Route::get('evenements/{event}', [FrontController::class, 'showEvent'])->name('events.show');
 Route::get('menu/{slug}', [MenuController::class, 'show'])->name('menu.show');
+Route::get('site-vitrine', [FrontController::class, 'siteVitrine'])->name('site-vitrine');
+Route::get('site-ecommerce', [FrontController::class, 'siteEcommerce'])->name('site-ecommerce');
+Route::get('application-web', [FrontController::class, 'applicationWeb'])->name('application-web');
 Route::post('contacts', [ContactController::class, 'store'])->name('contacts.store');
 Route::get('sitemap.xml', [SitemapController::class, 'index'])->name('sitemap.index');
 

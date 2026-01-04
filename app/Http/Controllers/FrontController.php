@@ -47,4 +47,19 @@ class FrontController extends Controller
             ]
         ]);
     }
+
+    public function siteVitrine(): Response
+    {
+        return Inertia::render('site-vitrine');
+    }
+
+    public function siteEcommerce(): Response
+    {
+        return Inertia::render('site-ecommerce');
+    }
+
+    public function applicationWeb(): Response
+    {
+        return Inertia::render('application-web');
+    }
 }
