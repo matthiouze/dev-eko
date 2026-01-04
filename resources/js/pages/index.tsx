@@ -103,7 +103,7 @@ export default function Index() {
             <section
                 className="relative flex h-[60vh] items-center justify-center bg-neutral-200 text-center text-white md:h-[70vh]"
                 style={{
-                    backgroundImage: "url('/img/banner.jpg')",
+                    backgroundImage: "url('/img/banner.png')",
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundAttachment: 'fixed',
@@ -111,15 +111,13 @@ export default function Index() {
             >
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="relative z-10 mx-auto max-w-3xl px-6">
-                    <h1 className="text-3xl leading-tight font-bold md:text-5xl">Création de site internet</h1>
-                    <p className="mt-4 text-base text-neutral-100 md:text-lg">
-                        Des sites rapides, visibles, les plus légers possible
-                    </p>
+                    <h1 className="text-4xl leading-tight font-bold md:text-6xl">Création de site internet</h1>
+                    <p className="mt-4 text-base text-neutral-100 md:text-lg">Des sites rapides, visibles, les plus légers possible</p>
                     <div className="mt-6 flex items-center justify-center gap-3">
                         <a
                             href="#contact"
                             onClick={scrollToContact}
-                            className="rounded-full bg-green px-5 py-2 text-sm font-semibold text-white hover:bg-green-200"
+                            className="bg-green rounded-full px-5 py-2 text-sm font-semibold text-white hover:bg-green-200"
                         >
                             Me contacter
                         </a>
@@ -129,17 +127,14 @@ export default function Index() {
 
             <main className="mx-auto max-w-6xl px-4 py-6 md:px-6">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h2 className="text-2xl font-semibold text-neutral-900 dark:text-neutral-100">
-                        Création de site internet
-                    </h2>
+                    <h2 className="text-2xl font-semibold text-neutral-900 dark:text-neutral-100">Création de site internet</h2>
                     <p className="mt-4 dark:text-neutral-300">
-                        Je suis développeur, spécialisé dans la <strong>création de sites internet</strong>,
-                        modernes et adaptés aux besoins des petites et moyennes entreprises.
-                        J'aide les entrepreneurs et PME à gagner en visibilité en ligne grâce à des solutions sur mesure,
-                        optimisées pour le SEO, la rapidité et l'expérience utilisateur.
-                        <br/>
-                        Que ce soit pour un site vitrine, e-commerce ou une application web, je vous mets en place une
-                        solution.
+                        Je suis développeur web, spécialisé dans la <strong>création de sites internet</strong>
+                        modernes et adaptés aux besoins des petites et moyennes entreprises. J'aide les entrepreneurs et PME à gagner en visibilité en
+                        ligne grâce à des <strong>solutions sur mesure</strong>,<strong>optimisées pour le SEO</strong>, la rapidité et l'expérience
+                        utilisateur.
+                        <br />
+                        Que ce soit pour un site vitrine, e-commerce ou une application web, je vous mets en place la solution la plus adaptée à vos besoins.
                     </p>
                 </div>
             </main>
@@ -148,22 +143,21 @@ export default function Index() {
             <section className="w-full bg-gradient-to-b from-gray-200 to-white py-12 md:py-16">
                 <div className="mx-auto max-w-6xl px-4 md:px-6">
                     {/* Prestation 1 - Site vitrine */}
-                    <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12 mb-12 lg:mb-16">
+                    <div className="mb-12 flex flex-col items-center gap-6 lg:mb-16 lg:flex-row lg:gap-12">
                         <div className="w-full lg:w-1/2">
                             <img
                                 src="/img/site.jpg"
                                 alt="Site vitrine"
-                                className="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto lg:max-w-none"
+                                className="mx-auto h-auto w-full max-w-md rounded-lg shadow-lg lg:max-w-none"
                             />
                         </div>
-                        <div className="w-full lg:w-1/2 text-center lg:text-left">
-                            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-4">Site vitrine</h3>
-                            <p className="text-neutral-700 text-base md:text-lg leading-relaxed mb-4">
-                                Créez votre présence en ligne avec un site vitrine professionnel.
-                                Moderne, responsive et optimisé pour le référencement, votre site
-                                reflétera parfaitement votre image de marque et attirera vos futurs clients.
+                        <div className="w-full text-center lg:w-1/2 lg:text-left">
+                            <h3 className="mb-4 text-xl font-bold text-neutral-900 md:text-2xl">Site vitrine</h3>
+                            <p className="mb-4 text-base leading-relaxed text-neutral-700 md:text-lg">
+                                Créez votre présence en ligne avec un site vitrine professionnel. Moderne, responsive et optimisé pour le
+                                référencement, votre site reflétera parfaitement votre image de marque et attirera vos futurs clients.
                             </p>
-                            <ul className="text-sm md:text-base text-neutral-600 space-y-1 inline-block text-left">
+                            <ul className="inline-block space-y-1 text-left text-sm text-neutral-600 md:text-base">
                                 <li>• Design sur mesure</li>
                                 <li>• Optimisation SEO</li>
                                 <li>• Responsive design</li>
@@ -173,22 +167,21 @@ export default function Index() {
                     </div>
 
                     {/* Prestation 2 - E-commerce */}
-                    <div className="flex flex-col lg:flex-row-reverse items-center gap-6 lg:gap-12 mb-12 lg:mb-16">
+                    <div className="mb-12 flex flex-col items-center gap-6 lg:mb-16 lg:flex-row-reverse lg:gap-12">
                         <div className="w-full lg:w-1/2">
                             <img
                                 src="/img/ecommerce.jpg"
                                 alt="Site e-commerce"
-                                className="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto lg:max-w-none"
+                                className="mx-auto h-auto w-full max-w-md rounded-lg shadow-lg lg:max-w-none"
                             />
                         </div>
-                        <div className="w-full lg:w-1/2 text-center lg:text-left">
-                            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-4">Site e-commerce</h3>
-                            <p className="text-neutral-700 text-base md:text-lg leading-relaxed mb-4">
-                                Développez votre activité commerciale avec une boutique en ligne performante.
-                                Gestion des produits, paiements sécurisés, suivi des commandes,
-                                tout est pensé pour maximiser vos ventes.
+                        <div className="w-full text-center lg:w-1/2 lg:text-left">
+                            <h3 className="mb-4 text-xl font-bold text-neutral-900 md:text-2xl">Site e-commerce</h3>
+                            <p className="mb-4 text-base leading-relaxed text-neutral-700 md:text-lg">
+                                Développez votre activité commerciale avec une boutique en ligne performante. Gestion des produits, paiements
+                                sécurisés, suivi des commandes, tout est pensé pour maximiser vos ventes.
                             </p>
-                            <ul className="text-sm md:text-base text-neutral-600 space-y-1 inline-block text-left">
+                            <ul className="inline-block space-y-1 text-left text-sm text-neutral-600 md:text-base">
                                 <li>• Catalogue produits</li>
                                 <li>• Paiements sécurisés</li>
                                 <li>• Gestion des stocks</li>
@@ -198,22 +191,21 @@ export default function Index() {
                     </div>
 
                     {/* Prestation 3 - Applications web */}
-                    <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
+                    <div className="flex flex-col items-center gap-6 lg:flex-row lg:gap-12">
                         <div className="w-full lg:w-1/2">
                             <img
                                 src="/img/dashboard.jpg"
                                 alt="Application web"
-                                className="w-full h-auto rounded-lg shadow-lg max-w-md mx-auto lg:max-w-none"
+                                className="mx-auto h-auto w-full max-w-md rounded-lg shadow-lg lg:max-w-none"
                             />
                         </div>
-                        <div className="w-full lg:w-1/2 text-center lg:text-left">
-                            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-4">Applications web</h3>
-                            <p className="text-neutral-700 text-base md:text-lg leading-relaxed mb-4">
-                                Optimisez votre productivité avec des applications web sur mesure.
-                                Gestion de données, tableaux de bord interactifs, outils métier,
-                                je développe la solution qui correspond à vos besoins spécifiques.
+                        <div className="w-full text-center lg:w-1/2 lg:text-left">
+                            <h3 className="mb-4 text-xl font-bold text-neutral-900 md:text-2xl">Applications web</h3>
+                            <p className="mb-4 text-base leading-relaxed text-neutral-700 md:text-lg">
+                                Optimisez votre productivité avec des applications web sur mesure. Gestion de données, tableaux de bord interactifs,
+                                outils métier, je développe la solution qui correspond à vos besoins spécifiques.
                             </p>
-                            <ul className="text-sm md:text-base text-neutral-600 space-y-1 inline-block text-left">
+                            <ul className="inline-block space-y-1 text-left text-sm text-neutral-600 md:text-base">
                                 <li>• Interface intuitive</li>
                                 <li>• Gestion de données</li>
                                 <li>• Tableaux de bord</li>
@@ -226,13 +218,10 @@ export default function Index() {
 
             <section className="w-full bg-neutral-50 py-12 md:py-16">
                 <div className="mx-auto max-w-6xl px-4 md:px-6">
-                    <div className="text-center mb-12">
-                        <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-4">
-                            Portfolio
-                        </h2>
-                        <p className="text-neutral-600 max-w-2xl mx-auto">
-                            Découvrez quelques-unes de mes réalisations récentes.
-                            Cliquez sur un projet pour en savoir plus.
+                    <div className="mb-12 text-center">
+                        <h2 className="mb-4 text-2xl font-bold text-neutral-900 md:text-3xl">Portfolio</h2>
+                        <p className="mx-auto max-w-2xl text-neutral-600">
+                            Découvrez quelques-unes de mes réalisations récentes. Cliquez sur un projet pour en savoir plus.
                         </p>
                     </div>
 
@@ -245,30 +234,22 @@ export default function Index() {
                             >
                                 {Array.from({ length: Math.ceil(portfolioProjects.length / 3) }).map((_, slideIndex) => (
                                     <div key={slideIndex} className="w-full flex-shrink-0">
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                            {portfolioProjects
-                                                .slice(slideIndex * 3, slideIndex * 3 + 3)
-                                                .map((project) => (
-                                                    <div
-                                                        key={project.id}
-                                                        className="bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:scale-105"
-                                                        onClick={() => openModal(project)}
-                                                    >
-                                                        <img
-                                                            src={project.image}
-                                                            alt={project.title}
-                                                            className="w-full h-48 object-cover"
-                                                        />
-                                                        <div className="p-4">
-                                                            <h3 className="font-semibold text-neutral-900 mb-2">
-                                                                {project.title}
-                                                            </h3>
-                                                            <p className="text-sm text-neutral-600 line-clamp-2">
-                                                                {project.description.substring(0, 100)}...
-                                                            </p>
-                                                        </div>
+                                        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                                            {portfolioProjects.slice(slideIndex * 3, slideIndex * 3 + 3).map((project) => (
+                                                <div
+                                                    key={project.id}
+                                                    className="transform cursor-pointer overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:scale-105"
+                                                    onClick={() => openModal(project)}
+                                                >
+                                                    <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
+                                                    <div className="p-4">
+                                                        <h3 className="mb-2 font-semibold text-neutral-900">{project.title}</h3>
+                                                        <p className="line-clamp-2 text-sm text-neutral-600">
+                                                            {project.description.substring(0, 100)}...
+                                                        </p>
                                                     </div>
-                                                ))}
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 ))}
@@ -278,31 +259,29 @@ export default function Index() {
                         {/* Boutons navigation */}
                         <button
                             onClick={prevSlide}
-                            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-neutral-800 rounded-full p-2 shadow-lg transition-all"
+                            className="absolute top-1/2 left-4 -translate-y-1/2 transform rounded-full bg-white/90 p-2 text-neutral-800 shadow-lg transition-all hover:bg-white"
                         >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
                         <button
                             onClick={nextSlide}
-                            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-neutral-800 rounded-full p-2 shadow-lg transition-all"
+                            className="absolute top-1/2 right-4 -translate-y-1/2 transform rounded-full bg-white/90 p-2 text-neutral-800 shadow-lg transition-all hover:bg-white"
                         >
-                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
                         </button>
 
                         {/* Indicateurs */}
-                        <div className="flex justify-center mt-6 space-x-2">
+                        <div className="mt-6 flex justify-center space-x-2">
                             {Array.from({ length: Math.ceil(portfolioProjects.length / 3) }).map((_, index) => (
                                 <button
                                     key={index}
                                     onClick={() => setCurrentSlide(index)}
-                                    className={`w-3 h-3 rounded-full transition-all ${
-                                        currentSlide === index
-                                            ? 'bg-green'
-                                            : 'bg-neutral-300 hover:bg-neutral-400'
+                                    className={`h-3 w-3 rounded-full transition-all ${
+                                        currentSlide === index ? 'bg-green' : 'bg-neutral-300 hover:bg-neutral-400'
                                     }`}
                                 />
                             ))}
@@ -311,40 +290,29 @@ export default function Index() {
 
                     {/* Modal */}
                     {selectedProject && (
-                        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
+                            <div className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-lg bg-white">
                                 <div className="relative">
-                                    <img
-                                        src={selectedProject.image}
-                                        alt={selectedProject.title}
-                                        className="w-full h-64 object-cover rounded-t-lg"
-                                    />
+                                    <img src={selectedProject.image} alt={selectedProject.title} className="h-64 w-full rounded-t-lg object-cover" />
                                     <button
                                         onClick={closeModal}
-                                        className="absolute top-4 right-4 bg-white/90 hover:bg-white text-neutral-800 rounded-full p-2 shadow-lg transition-all"
+                                        className="absolute top-4 right-4 rounded-full bg-white/90 p-2 text-neutral-800 shadow-lg transition-all hover:bg-white"
                                     >
-                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                         </svg>
                                     </button>
                                 </div>
 
                                 <div className="p-6">
-                                    <h3 className="text-2xl font-bold text-neutral-900 mb-4">
-                                        {selectedProject.title}
-                                    </h3>
-                                    <p className="text-neutral-700 leading-relaxed mb-6">
-                                        {selectedProject.description}
-                                    </p>
+                                    <h3 className="mb-4 text-2xl font-bold text-neutral-900">{selectedProject.title}</h3>
+                                    <p className="mb-6 leading-relaxed text-neutral-700">{selectedProject.description}</p>
 
                                     <div className="mb-6">
-                                        <h4 className="font-semibold text-neutral-900 mb-2">Technologies utilisées :</h4>
+                                        <h4 className="mb-2 font-semibold text-neutral-900">Technologies utilisées :</h4>
                                         <div className="flex flex-wrap gap-2">
                                             {selectedProject.technologies.map((tech, index) => (
-                                                <span
-                                                    key={index}
-                                                    className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm"
-                                                >
+                                                <span key={index} className="rounded-full bg-green-100 px-3 py-1 text-sm text-green-800">
                                                     {tech}
                                                 </span>
                                             ))}
@@ -356,13 +324,13 @@ export default function Index() {
                                             href={selectedProject.url}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="bg-green text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+                                            className="bg-green rounded-lg px-6 py-2 font-semibold text-white transition-colors"
                                         >
                                             Voir le site
                                         </a>
                                         <button
                                             onClick={closeModal}
-                                            className="bg-neutral-200 text-neutral-800 px-6 py-2 rounded-lg font-semibold transition-colors"
+                                            className="rounded-lg bg-neutral-200 px-6 py-2 font-semibold text-neutral-800 transition-colors"
                                         >
                                             Fermer
                                         </button>
