@@ -28,7 +28,7 @@
             }
         </style>
 
-       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
@@ -36,7 +36,9 @@
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
         @routes
-        @viteReactRefresh
+        @if(app()->environment('local'))
+            @viteReactRefresh
+        @endif
         @vite(['resources/js/app.tsx', "resources/js/pages/{$page['component']}.tsx"])
         @inertiaHead
     </head>
